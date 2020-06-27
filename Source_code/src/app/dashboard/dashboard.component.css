@@ -1,0 +1,13 @@
+.card-container {
+    width: 80%;
+    margin: auto;
+}
+
+.card-view div{
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 50px;
+    cursor: pointer;
+}

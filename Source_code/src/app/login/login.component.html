@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Sign In</h5>
+                    <form class="form-signin" [formGroup] = "loginForm" (ngSubmit) = "loginUser()">
+                        <div class="form-group">
+                            <input type="text" id="inputEmail" class="form-control" placeholder="User Name" autofocus formControlName = "userName">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName = "password">
+                        </div>
+
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" [disabled] = "!loginForm.valid">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

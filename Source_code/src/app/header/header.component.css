@@ -1,0 +1,13 @@
+.header-container {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 15px 5px;
+}
+
+.header {
+    text-align: center;
+}
+
+.user-info {
+    text-align: right;
+}

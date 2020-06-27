@@ -1,0 +1,17 @@
+<div class="header-container">
+    <div class="row">
+        <div class="col-sm-3">
+            <a routerLink="/dashboard" *ngIf = "showBackBtn">Back</a>
+        </div>
+        <div class="col-sm-6 header">
+            <h5>{{header}}</h5>
+        </div>
+        <div class="col-sm-3 user-info">
+            <div *ngIf = "showUserInfo">
+                <span class="float-left">{{userName}}</span>
+                <a (click)="logout()" href = "javascript:void(0)">Logout</a>
+            </div>
+            
+        </div>
+    </div>
+</div>

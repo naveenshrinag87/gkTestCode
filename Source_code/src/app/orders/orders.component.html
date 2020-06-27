@@ -1,0 +1,25 @@
+<app-header header="View Customer Details" showBackBtn="true"></app-header>
+
+<div class = "order-container">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Order Date</th>
+                        <th>Order Details</th>
+                        <th>Order Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of ordersData | async">
+                        <td>{{data.customer.customerName}}</td>
+                        <td>{{data.orderDate}}</td>
+                        <td>{{data.orderDetail}}</td>
+                        <td>{{data.orderAmount}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+</div>
